@@ -9,7 +9,7 @@
 /* common styles  */
 .primary-text {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.45vw;
     color: #424242;
 }
 
@@ -36,14 +36,14 @@ header {
 
 .nav-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 4.5vw;
 }
 
 .shortcut-links {
     display: flex;
     gap: 30px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.58vw;
     color: #424242;
 }
 
@@ -62,7 +62,7 @@ header {
 #banner-title {
     padding: 0 18%;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 5.8vw;
 }
 
 #banner-text {
@@ -123,18 +123,18 @@ header {
 
 #quick-list {
     font-weight: 500;
-    font-size: 45px;
+    font-size: 5vw;
     color: #727272;
 }
 
 #of-our {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 5vw;
 }
 
 #features {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 5vw;
     color: #FF900E;
 }
 
@@ -155,7 +155,7 @@ header {
 
 #title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 4.45vw;
     border-left: 4px solid #FF900E;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -163,7 +163,7 @@ header {
 
 .subtitle {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 2vw;
     padding: 10px 0;
 
 }
@@ -200,6 +200,32 @@ header {
     font-size: 55px;
 }
 
+/* bonus section  */
+#bonus-section {
+
+    margin: 200px 10% 0;
+}
+
+#bonus-section-title {
+    font-weight: 700;
+    font-size: 4.45vw;
+    text-align: center;
+}
+
+#bonus-section img {
+    height: 250px;
+    width: 250px;
+}
+
+.goals {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
 /* section 3  */
 
 #section-3 {
@@ -208,7 +234,7 @@ header {
 
 #section3-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 4.5vw;
 }
 
 #section-3 .primary-text {
@@ -222,7 +248,7 @@ header {
     justify-content: space-around;
     text-align: center;
     justify-items: center;
-margin: 90px 0;
+    margin: 90px 0;
 
 }
 
@@ -235,40 +261,79 @@ margin: 90px 0;
     text-align: center;
 
 }
+
 /* footer  */
-footer{
+footer {
     margin: 0 11%;
     text-align: center;
 }
-#footer-title{
+
+#footer-title {
     font-weight: 700;
-font-size: 45px;
+    font-size: 45px;
 }
-#footer-description{
+
+#footer-description {
     font-weight: 400;
-font-size: 16px;
-margin: 20px 0;
-padding: 0 25%;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 0 25%;
 
 }
-#sponsors{
+
+#sponsors {
     display: flex;
 
 }
-#sponsors{
+
+#sponsors {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+
 }
-#sponsors img{
+
+#sponsors img {
     height: 50px;
     width: 150px;
+
+
 }
-#copyright{
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+#copyright {
     background: #FFF4E7;
+    color: #424242;
+
     height: 80px;
     text-align: center;
     display: grid;
     place-items: center;
-    margin: 120px 0;
+    margin: 100px 0;
+}
+
+/* general structure done  */
+.hide{
+    display: none;
+}
+/* making web responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+    .navigation-bar{
+        flex-direction: column;
+    }
+    .shortcut-links{
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 10px;
+    }
+    #banner-title{
+        padding: 0 13%;
+    }
+    .explore-button{
+        width: 30%;
+    }
 }

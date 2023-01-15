@@ -334,6 +334,19 @@ footer {
         padding: 0 13%;
     }
     .explore-button{
-        width: 30%;
+        width: 50px;
+        height: 22px;
+        font-weight: 400;
+        font-size: 7px;
+        border-radius: 3px;
     }
+    /* section 1 responsive done  */
+    #section-2{
+        flex-direction: column;
+        
+    }
+    #text-area{
+        margin-right: 0;
+    }
+
 }

@@ -357,6 +357,9 @@ footer {
     }
 
     /* header section responsive done  */
+    .primary-text {
+        font-size: 2.5vw;
+    }
 
     #section-1 {
         flex-direction: column;
@@ -368,6 +371,7 @@ footer {
 
     #section-2 {
         flex-direction: column;
+        gap: 30px;
 
     }
 
@@ -399,9 +403,15 @@ footer {
 
     /* section2 done  */
 
-    /* bonus section  */
+
     .goals {
         flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .goals .primary-text {
+        padding: 20px 15px;
+        text-align: center;
     }
 
     #container {

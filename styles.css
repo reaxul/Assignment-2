@@ -258,7 +258,18 @@ header {
     width: 130px;
     border: 3px solid #FF900E;
     border-radius: 8px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#container :hover {
+    transform: scale(1.2) rotate(15deg);
+    background-color: #ff8f0e6b;
+    transition: transform 0.2s ease-in-out;
 
 }
 
@@ -270,7 +281,7 @@ footer {
 
 #footer-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 4.5vh;
 }
 
 #footer-description {
@@ -316,37 +327,93 @@ footer {
 }
 
 /* general structure done  */
-.hide{
+.hide {
     display: none;
 }
+
 /* making web responsive for mobile device */
 
 @media screen and (max-width: 576px) {
-    .navigation-bar{
+    .navigation-bar {
         flex-direction: column;
     }
-    .shortcut-links{
+
+    .shortcut-links {
         flex-direction: column;
         gap: 13px;
         margin-top: 10px;
     }
-    #banner-title{
+
+    #banner-title {
         padding: 0 13%;
     }
-    .explore-button{
+
+    .explore-button {
         width: 50px;
         height: 22px;
         font-weight: 400;
         font-size: 7px;
         border-radius: 3px;
     }
-    /* section 1 responsive done  */
-    #section-2{
+
+    /* header section responsive done  */
+
+    #section-1 {
         flex-direction: column;
-        
     }
-    #text-area{
+
+    #grid-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section-2 {
+        flex-direction: column;
+
+    }
+
+    #text-area {
         margin-right: 0;
+    }
+
+    #big-button {
+        width: 120px;
+        height: 50px;
+        background-color: #FF900E;
+        color: white;
+        font-weight: 300;
+        font-size: 14px;
+        border: 0;
+        border-radius: 5px;
+        margin-top: -30%;
+        margin-left: 32%;
+
+
+
+    }
+
+    #big-text {
+
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    /* section2 done  */
+
+    /* bonus section  */
+    .goals {
+        flex-direction: column;
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #sponsors {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
 }

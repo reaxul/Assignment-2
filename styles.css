@@ -235,3 +235,40 @@ margin: 90px 0;
     text-align: center;
 
 }
+/* footer  */
+footer{
+    margin: 0 11%;
+    text-align: center;
+}
+#footer-title{
+    font-weight: 700;
+font-size: 45px;
+}
+#footer-description{
+    font-weight: 400;
+font-size: 16px;
+margin: 20px 0;
+padding: 0 25%;
+
+}
+#sponsors{
+    display: flex;
+
+}
+#sponsors{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#sponsors img{
+    height: 50px;
+    width: 150px;
+}
+#copyright{
+    background: #FFF4E7;
+    height: 80px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    margin: 120px 0;
+}
